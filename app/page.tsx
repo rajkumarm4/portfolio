@@ -1,0 +1,49 @@
+import { ArrowUpRight, BriefcaseBusiness, LinkIcon } from 'lucide-react'
+
+export default function Page() {
+  return (
+    <main className="min-h-screen overflow-hidden bg-slate-50 text-slate-950">
+      <div className="relative mx-auto flex min-h-screen max-w-6xl items-center justify-center px-6 py-12 sm:px-10">
+        <div className="pointer-events-none absolute -left-24 -top-24 size-72 rounded-full bg-blue-100/70 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-32 -right-20 size-96 rounded-full bg-blue-100/60 blur-3xl" />
+
+        <section aria-labelledby="intro-heading" className="relative grid w-full max-w-4xl overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-[0_24px_80px_-32px_rgba(37,99,235,0.35)] md:grid-cols-[0.9fr_1.1fr]">
+          <div className="flex min-h-[25rem] flex-col justify-between bg-blue-700 p-8 text-white sm:p-12">
+            <div className="flex items-center gap-3 text-sm font-semibold tracking-wide text-blue-100">
+              <span className="flex size-10 items-center justify-center rounded-xl bg-white/15 ring-1 ring-white/20">
+                <BriefcaseBusiness aria-hidden="true" className="size-5" />
+              </span>
+              Personal calling card
+            </div>
+            <div className="mt-16">
+              <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-blue-200">Hello, I&apos;m</p>
+              <h1 id="intro-heading" className="text-4xl font-semibold tracking-tight sm:text-5xl">Raj Kumar</h1>
+              <p className="mt-5 max-w-xs text-lg leading-8 text-blue-100">Software Developer and Technology Enthusiast</p>
+            </div>
+            <div className="mt-12 h-1 w-16 rounded-full bg-blue-300" />
+          </div>
+
+          <div className="flex flex-col justify-center p-8 sm:p-12">
+            <div className="max-w-lg">
+              <p className="text-lg leading-8 text-slate-600">
+                I enjoy building software projects and learning new technologies. I am interested in web development, artificial intelligence, and problem solving. I like creating solutions that help people and improve everyday experiences.
+              </p>
+
+              <div className="mt-10 border-t border-slate-200 pt-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">How to reach me</p>
+                <a className="group mt-4 inline-flex items-center gap-3 text-base font-semibold text-slate-900 transition-colors hover:text-blue-700" href="https://linkedin.com/in/m-raj-kumar-a55050249" target="_blank" rel="noreferrer">
+                  <span className="flex size-10 items-center justify-center rounded-lg bg-blue-50 text-blue-700 transition-colors group-hover:bg-blue-700 group-hover:text-white">
+                    <LinkIcon aria-hidden="true" className="size-5" />
+                  </span>
+                  <span>linkedin.com/in/m-raj-kumar-a55050249</span>
+                  <ArrowUpRight aria-hidden="true" className="size-4 shrink-0" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  )
+}
+

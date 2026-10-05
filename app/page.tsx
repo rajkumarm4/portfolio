@@ -18,6 +18,7 @@ export default function Page() {
             <div className="mt-16">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-[#dbe6bd]">Hello, I&apos;m</p>
               <h1 id="intro-heading" className="text-4xl font-semibold tracking-tight sm:text-5xl">Raj Kumar</h1>
+              <p className="mt-3 text-sm font-medium text-[#dbe6bd]">My github and projects :github.com/rajkumarm4</p>
               <p className="mt-5 max-w-xs text-lg leading-8 text-[#eef3df]">Software Developer and Technology Enthusiast</p>
             </div>
             <div className="mt-12 h-1 w-16 rounded-full bg-[#b9ca8b]" />
